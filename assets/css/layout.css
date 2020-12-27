@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+.border {
+  padding: 20px;
+  border: solid 5px white; }
+  @media screen and (max-width: 900px) {
+    .border {
+      padding: 20px; } }
+
+#break-me {
+  font-size: 7px;
+  display: block; }
+
+@media screen and (max-width: 550px) {
+  #break-me {
+    display: none; } }
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", serif;
+  color: #728dac; }
+  .container .color--overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 5vw;
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    -ms-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out; }
+    @media screen and (max-width: 900px) {
+      .container .color--overlay {
+        padding: 4vw; } }
+    .container .color--overlay .color--overlay::after {
+      content: "";
+      border: solid 2px red;
+      height: 10px;
+      display: block;
+      width: 100px; }
+    .container .color--overlay .logo {
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: .02rem;
+      line-height: 1.2; }
+      @media screen and (max-width: 550px) {
+        .container .color--overlay .logo {
+          font-size: 2.75rem; } }
+      .container .color--overlay .logo .logo--phonetics {
+        font-weight: 300;
+        text-transform: lowercase;
+        font-size: 2rem; }
+        @media screen and (max-width: 550px) {
+          .container .color--overlay .logo .logo--phonetics {
+            font-size: 1.8rem; } }
+    .container .color--overlay .text--content {
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: .02rem;
+      line-height: 1.2;
+      width: 45vw;
+      margin-top: 1.75rem; }
+      @media screen and (max-width: 850px) {
+        .container .color--overlay .text--content {
+          width: 60vw; } }
+      @media screen and (max-width: 550px) {
+        .container .color--overlay .text--content {
+          font-size: 1.5rem; } }
+    .container .color--overlay .text--contact {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #445a74;
+      line-height: 1.6; }
+      @media screen and (max-width: 550px) {
+        .container .color--overlay .text--contact {
+          font-size: 1.3rem; } }
+
+/*# sourceMappingURL=layout.css.map */
